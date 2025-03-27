@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    background-color: #f9f9f9; /* Fondo claro para contraste */
+}
+
+.navbarContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye "LOGO" a la izquierda y los enlaces a la derecha */
+    align-items: center;
+    padding: 1rem 2rem;
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
+    gap: 0.5rem; /* Espaciado entre la imagen y el texto */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.logoImage {
+    width: 3em;
+    height: auto;
+}
+
+
+.navList {
+    display: flex;
+    gap: 2rem; /* Espaciado entre los enlaces */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+    padding: 1rem 2rem;
+    list-style: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navItem {
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ff5100;
+    transform: scale(1.05);
+}
+
+.navLink.active {
+    color: #007bff;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Botón general */
+.navLinkButton {
+    background-color: #ff5100; /* Color principal */
+    color: #ffffff; /* Texto blanco */
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Efecto hover */
+.navLinkButton:hover {
+    background-color: #e14c00; /* Más oscuro en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Efecto al presionar */
+.navLinkButton:active {
+    background-color: #c74300; /* Color más oscuro */
+    transform: scale(0.98); /* Ligera contracción */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Sombra reducida */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navLinkButton {
+        width: 100%; /* Botón de ancho completo */
+        margin-top: 1rem; /* Espacio entre el botón y otros elementos */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    .navLink {
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        margin-bottom: 1rem; /* Espaciado inferior para separarlo de los enlaces */
+      }
+
+      .navList {
+        flex-direction: column; /* Coloca los enlaces en columna */
+        width: 100%; /* Asegura que ocupen todo el ancho */
+      }
+}
+
+
+  

@@ -1,0 +1,98 @@
+/* Login.module.css */
+.formTitle {
+    font-family: "Arial", sans-serif;
+    font-size: 2rem;
+    color: #005eb8; /* Azul hospitalario */
+    margin-bottom: 20px;
+    margin-top: 20vh;
+  }
+
+  .fondo {
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-dia-internacional-enfermera-dibujado-mano_23-2149341238.jpg?t=st=1743030487~exp=1743034087~hmac=9415d2cd46deb6ee0890995ede3e090fb886a0f81553e04b730a788e5ceb4279&w=1060');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Fondo suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .formLabel {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003366; /* Texto profesional */
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #d1d9de; /* Bordes suaves */
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #005eb8; /* Azul activo */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 94, 184, 0.5);
+  }
+  
+  .errorLabel {
+    font-size: 0.85rem;
+    color: #d9534f; /* Rojo de error */
+    margin-top: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #005eb8; /* Botón azul */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004a99;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #d1d9de; /* Botón deshabilitado */
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 480px) {
+    .formContainer {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .formTitle {
+      font-size: 1.5rem;
+    }
+  }
+  

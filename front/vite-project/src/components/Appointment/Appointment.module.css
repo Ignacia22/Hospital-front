@@ -1,0 +1,135 @@
+.appointmentCard {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .appointmentCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .appointmentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .appointmentHeader h3 {
+    font-size: 1.2rem;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .statusActive {
+    color: #28a745;
+    background-color: #d4edda;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .statusInactive {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .appointmentDetails {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  .appointmentDetails p {
+    margin: 8px 0;
+  }
+  
+  .appointmentDetails strong {
+    color: #333333;
+  }
+  
+  .appointmentDetails span {
+    margin-left: 8px;
+  }
+
+ 
+.cancelButton {
+  background-color: teal;
+  color: #ffffff; 
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.cancelButton:hover {
+  background-color: #e02727; 
+  transform: scale(1.05); 
+}
+
+
+.cancelButton:active {
+  background-color: #c12020; 
+  transform: scale(0.98); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+}
+
+
+.cancelButton.disable {
+  background-color: #d3d3d3; 
+  color: #a1a1a1; 
+  cursor: not-allowed; 
+  box-shadow: none; 
+}
+
+
+.cancelButton.disable:hover {
+  background-color: #d3d3d3;
+  transform: none;
+}
+
+
+.cancelButton.disable:active {
+  background-color: #d3d3d3;
+  transform: none;
+}
+
+
+
+/* Estilos cuando el botón está deshabilitado */
+.cancelButton.disable,
+.cancelButton:disabled {
+    background-color: #d3d3d3; /* Color gris para el estado deshabilitado */
+    color: #a1a1a1; /* Texto gris */
+    cursor: not-allowed; /* Cursor desactivado */
+    box-shadow: none; /* Sin sombra */
+    opacity: 0.6; /* Opacidad reducida para el estado deshabilitado */
+}
+
+/* Eliminar los efectos hover y active cuando el botón está deshabilitado */
+.cancelButton.disable:hover,
+.cancelButton:disabled:hover {
+    background-color: #d3d3d3;
+    transform: none;
+}
+
+.cancelButton.disable:active,
+.cancelButton:disabled:active {
+    background-color: #d3d3d3;
+    transform: none;
+}
+  

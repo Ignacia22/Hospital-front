@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: peachpuff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff; 
+    margin-bottom: 1.5rem;
+    margin-top: 5em;
+    text-align: center;
+}
+
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+
+.formGroup label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+
+.input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007bff; 
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); 
+}
+
+
+.errorInput {
+    border-color: #dc3545; 
+    background-color: #fff5f5; 
+}
+
+
+.error {
+    font-size: 0.875rem;
+    color: #dc3545; 
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+
+.submitButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 1rem;
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submitButton:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: scale(1.02); 
+}
+
+.submitButton:active {
+    transform: scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .input {
+        font-size: 0.9rem;
+    }
+
+    .submitButton {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+}
